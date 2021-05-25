@@ -19,6 +19,4 @@ public class UserRegistration {
             System.out.println("Invalid First Name");
         }
     }
-
-
 }
