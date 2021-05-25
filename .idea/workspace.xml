@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b2d131-4430-4c88-aec4-30ec18b90d19" name="Default Changelist" comment="ADDED:Functionality to validate mobile number format" />
+    <list default="true" id="55b2d131-4430-4c88-aec4-30ec18b90d19" name="Default Changelist" comment="ADDED:Functionality to validate password should contain at least one numeric number" />
     <list id="fffcba43-4e58-4e46-84f5-fbfd9ee765f0" name="Uncommitted changes before rebase [Default Changelist]" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="UC4_Valid_MobileFormat" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621965726170</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ADDED:Functionality to validate password should contain at least one upper case">
+      <created>1621966002129</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621966002129</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ADDED:Functionality to validate password should contain at least one numeric number">
+      <created>1621966101538</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621966101538</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +148,8 @@
     <MESSAGE value="ADDED:Functionality to validate last name" />
     <MESSAGE value="ADDED:Functionality to validate email" />
     <MESSAGE value="ADDED:Functionality to validate mobile number format" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADDED:Functionality to validate mobile number format" />
+    <MESSAGE value="ADDED:Functionality to validate password should contain at least one upper case" />
+    <MESSAGE value="ADDED:Functionality to validate password should contain at least one numeric number" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADDED:Functionality to validate password should contain at least one numeric number" />
   </component>
 </project>
