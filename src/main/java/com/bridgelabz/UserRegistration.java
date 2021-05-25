@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserRegistration {
     public static void main(String[] args)
     {
-        String firstName,lastName;
+        String firstName,lastName,email;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter first Name:");
         firstName=sc.nextLine();
@@ -27,6 +27,16 @@ public class UserRegistration {
         else
         {
             System.out.println("Invalid last Name");
+        }
+        System.out.println("Enter Email:");
+        email=sc.nextLine();
+        if(Pattern.matches("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",email))
+        {
+            System.out.println("Valid Email");
+        }
+        else
+        {
+            System.out.println("Invalid Email");
         }
     }
 }
