@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserRegistration {
     public static void main(String[] args)
     {
-        String firstName,lastName,email,mobile;
+        String firstName,lastName,email,mobile,password;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter first Name:");
         firstName=sc.nextLine();
@@ -47,6 +47,16 @@ public class UserRegistration {
         else
         {
             System.out.println("Invalid Mobile Number");
+        }
+        System.out.println("Enter Password:");
+        password=sc.nextLine();
+        if(Pattern.matches("^[a-zA-Z0-9] * {8,32}$",password))
+        {
+            System.out.println("Valid Password");
+        }
+        else
+        {
+            System.out.println("Invalid Password");
         }
     }
 }
