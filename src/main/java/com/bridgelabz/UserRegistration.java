@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserRegistration {
     public static void main(String[] args)
     {
-        String firstName,lastName,email;
+        String firstName,lastName,email,mobile;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter first Name:");
         firstName=sc.nextLine();
@@ -37,6 +37,16 @@ public class UserRegistration {
         else
         {
             System.out.println("Invalid Email");
+        }
+        System.out.println("Enter Mobile:");
+        mobile=sc.nextLine();
+        if(Pattern.matches("^[0-9]{2} [0-9]{10}",mobile))
+        {
+            System.out.println("Valid Mobile Number");
+        }
+        else
+        {
+            System.out.println("Invalid Mobile Number");
         }
     }
 }
