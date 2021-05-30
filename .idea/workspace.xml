@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b2d131-4430-4c88-aec4-30ec18b90d19" name="Default Changelist" comment="ADDED:Refactored code">
+    <list default="true" id="55b2d131-4430-4c88-aec4-30ec18b90d19" name="Default Changelist" comment="ADDED:JUnit Test to validate the user entry">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/UserRegistration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/bridgelabz/UserRegistration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegistrationTest.java" afterDir="false" />
     </list>
     <list id="fffcba43-4e58-4e46-84f5-fbfd9ee765f0" name="Uncommitted changes before rebase [Default Changelist]" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -67,15 +69,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EmployeeWageProblem" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
   </component>
-  <component name="RunManager" selected="Gradle.UserRegistrationTest">
-    <configuration name="UserRegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.bridgelabz" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in UserRegistration_Problem.test (1)">
+    <configuration name="ValidEmailTest.givenEmail_WhenProper_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.UserRegistrationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.ValidEmailTest.givenEmail_WhenProper_ShouldReturnTrue[*]&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -91,97 +104,53 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRegistrationTest.givenFirstName_WhenProper_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.UserRegistrationTest.givenFirstName_WhenProper_ShouldReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="All in UserRegistration_Problem.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserRegistration_Problem.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="UserRegistrationTest.givenMobileNumber_WhenShort_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.UserRegistrationTest.givenMobileNumber_WhenShort_ShouldReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="All in UserRegistration_Problem.test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserRegistration_Problem.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="UserRegistrationTest.givenPassword_WhenProper_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.UserRegistrationTest.givenPassword_WhenProper_ShouldReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="All in UserRegistration_Problem.test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserRegistration_Problem.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="UserRegistrationTest.givenPassword_WhenShort_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.UserRegistrationTest.givenPassword_WhenShort_ShouldReturnFalse&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="All in UserRegistration_Problem.test (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserRegistration_Problem.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in UserRegistration_Problem.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserRegistration_Problem.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserRegistrationTest" />
-        <item itemvalue="Gradle.UserRegistrationTest.givenFirstName_WhenProper_ShouldReturnTrue" />
-        <item itemvalue="Gradle.UserRegistrationTest.givenPassword_WhenShort_ShouldReturnFalse" />
-        <item itemvalue="Gradle.UserRegistrationTest.givenPassword_WhenProper_ShouldReturnTrue" />
-        <item itemvalue="Gradle.UserRegistrationTest.givenMobileNumber_WhenShort_ShouldReturnTrue" />
+        <item itemvalue="JUnit.All in UserRegistration_Problem.test (1)" />
+        <item itemvalue="JUnit.All in UserRegistration_Problem.test" />
+        <item itemvalue="JUnit.All in UserRegistration_Problem.test (5)" />
+        <item itemvalue="JUnit.All in UserRegistration_Problem.test (4)" />
+        <item itemvalue="JUnit.All in UserRegistration_Problem.test (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622112906989</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ADDED:JUnit Test to validate the user entry">
+      <created>1622220658403</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622220658403</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +244,17 @@
     <MESSAGE value="ADDED:Functionality to validate password should contain at least one upper case" />
     <MESSAGE value="ADDED:Functionality to validate password should contain at least one numeric number" />
     <MESSAGE value="ADDED:Refactored code" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADDED:Refactored code" />
+    <MESSAGE value="ADDED:JUnit Test to validate the user entry" />
+    <MESSAGE value="ADDED:" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADDED:" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/UserRegistration_Problem$ValidEmailTest.ic" NAME="ValidEmailTest Coverage Results" MODIFIED="1622394163122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UserRegistration_Problem$ValidEmailTest_emailChecker.ic" NAME="ValidEmailTest.emailChecker Coverage Results" MODIFIED="1622393905690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/UserRegistration_Problem$ValidEmailTest_givenEmail_WhenProper_ShouldReturnTrue.ic" NAME="ValidEmailTest.givenEmail_WhenProper_ShouldReturnTrue Coverage Results" MODIFIED="1622394222912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

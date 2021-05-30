@@ -81,5 +81,22 @@ public class UserRegistration {
             return false;
         }
     }
+    public boolean parameterizedEmail(String email, boolean status)
+    {
+        boolean returnVal;
+        if(Pattern.matches(emailPattern, email))
+        {
+            System.out.println("Valid email");
+            returnVal= true;
+        }
+        else
+        {
+            System.out.println("Invalid email");
+            returnVal= false;
+        }
+        if(status == returnVal)
+            return true;
+        return false;
+    }
 }
 
