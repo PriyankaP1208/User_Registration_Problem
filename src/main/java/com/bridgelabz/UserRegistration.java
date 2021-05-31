@@ -11,92 +11,105 @@ public class UserRegistration {
     String passwordPattern = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).{8,32}$";
 
     //Validate first name
-    public boolean validFirstName(String fname)
+    public boolean validFirstName(String fname) throws UserRegistrationException
     {
-        if(Pattern.matches(namePatter, fname))
-        {
-            System.out.println("Valid First Name");
-            return true;
+        try {
+            if (Pattern.matches(namePatter, fname)) {
+                System.out.println("Valid First Name");
+                return true;
+            } else {
+                throw new UserRegistrationException("Invalid first name");
+            }
         }
-        else
+        catch (Exception e)
         {
-            System.out.println("Invalid First Name");
-            return false;
+            throw new UserRegistrationException("Invalid first name");
         }
     }
 
     //Validate last name
-    public boolean validLastName(String lname)
+    public boolean validLastName(String lname) throws UserRegistrationException
     {
-        if(Pattern.matches(namePatter, lname))
-        {
-            System.out.println("Valid last Name");
-            return true;
+        try {
+            if (Pattern.matches(namePatter, lname)) {
+                System.out.println("Valid last Name");
+                return true;
+            } else {
+                throw new UserRegistrationException("Invalid last name");
+            }
         }
-        else
+        catch (Exception e)
         {
-            System.out.println("Invalid last Name");
-            return false;
+            throw new UserRegistrationException("Invalid last name");
         }
     }
 
     //Validate email address
-    public boolean validEmail(String email){
-        if(Pattern.matches(emailPattern, email))
-        {
-            System.out.println("Valid email");
-            return true;
+    public boolean validEmail(String email)throws UserRegistrationException
+    {
+        try {
+            if (Pattern.matches(emailPattern, email)) {
+                System.out.println("Valid email");
+                return true;
+            } else {
+                throw new UserRegistrationException("Invalid email");
+            }
         }
-        else
+        catch (Exception e)
         {
-            System.out.println("Invalid email");
-            return false;
+            throw new UserRegistrationException("Invalid email");
         }
     }
 
     //Validate phone number
-    public boolean validMobile(String phoneNo){
-        if(Pattern.matches(mobilePattern, phoneNo))
-        {
-            System.out.println("Valid mobile number");
-            return true;
+    public boolean validMobile(String phoneNo) throws UserRegistrationException {
+        try {
+            if (Pattern.matches(mobilePattern, phoneNo)) {
+                System.out.println("Valid mobile number");
+                return true;
+            } else {
+                throw new UserRegistrationException("Invalid mobile number");
+            }
         }
-        else
+        catch (Exception e)
         {
-            System.out.println("Invalid mobile number");
-            return false;
+            throw new UserRegistrationException("Invalid mobile number");
         }
     }
 
     //validate password
-    public boolean validPassword(String password){
-        if(Pattern.matches(passwordPattern, password))
-        {
-            System.out.println("Valid Password");
-            return true;
+    public boolean validPassword(String password) throws UserRegistrationException {
+        try {
+            if (Pattern.matches(passwordPattern, password)) {
+                System.out.println("Valid Password");
+                return true;
+            } else {
+                throw new UserRegistrationException("Invalid password");
+            }
         }
-        else
+        catch (Exception e)
         {
-            System.out.println("Invalid Password");
-            return false;
+            throw new UserRegistrationException("Invalid password");
         }
     }
-    public boolean parameterizedEmail(String email, boolean status)
+    public boolean parameterizedEmail(String email, boolean status) throws UserRegistrationException
     {
-        boolean returnVal;
-        if(Pattern.matches(emailPattern, email))
-        {
-            System.out.println("Valid email");
-            returnVal= true;
+        try {
+            boolean returnVal;
+            if (Pattern.matches(emailPattern, email)) {
+                System.out.println("Valid email");
+                returnVal = true;
+            } else {
+                throw new UserRegistrationException("Invalid email");
+            }
+            if (status == returnVal)
+                return true;
+            return false;
         }
-        else
+        catch (Exception e)
         {
-            System.out.println("Invalid email");
-            returnVal= false;
+            throw new UserRegistrationException("Invalid email");
         }
-        if(status == returnVal)
-            return true;
-        return false;
     }
 }
 

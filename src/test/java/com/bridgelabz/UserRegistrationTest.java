@@ -7,14 +7,14 @@ import org.junit.runner.JUnitCore;
 public class UserRegistrationTest {
     //Testing first name
     @Test
-    public void givenFirstName_WhenProper_ShouldReturnTrue() {
+    public void givenFirstName_WhenProper_ShouldReturnTrue() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validFirstName("Priyanka");
         assertTrue(result);
     }
 
     @Test
-    public void givenFirstName_WhenShort_ShouldReturnFalse() {
+    public void givenFirstName_WhenShort_ShouldReturnFalse() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validFirstName("pri");
         assertFalse(result);
@@ -22,14 +22,14 @@ public class UserRegistrationTest {
 
     //Testing last name
     @Test
-    public void givenLastName_WhenProper_ShouldReturnTrue() {
+    public void givenLastName_WhenProper_ShouldReturnTrue() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validLastName("Patil");
         assertTrue(result);
     }
 
     @Test
-    public void givenLastName_WhenShort_ShouldReturnFalse() {
+    public void givenLastName_WhenShort_ShouldReturnFalse() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validLastName("pl");
         assertFalse(result);
@@ -37,14 +37,14 @@ public class UserRegistrationTest {
 
     //Testing email address
     @Test
-    public void givenEmail_WhenProper_ShouldReturnTrue() {
+    public void givenEmail_WhenProper_ShouldReturnTrue() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validEmail("abc@yahoo.com");
         assertTrue(result);
     }
 
     @Test
-    public void givenEmail_WhenShort_ShouldReturnFalse() {
+    public void givenEmail_WhenShort_ShouldReturnFalse() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validEmail("abc.xyz.co.in");
         assertFalse(result);
@@ -52,14 +52,14 @@ public class UserRegistrationTest {
 
     //Testing phone number
     @Test
-    public void givenMobileNumber_WhenProper_ShouldReturnTrue() {
+    public void givenMobileNumber_WhenProper_ShouldReturnTrue() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validMobile("91 9881203930");
         assertTrue(result);
     }
 
     @Test
-    public void givenMobileNumber_WhenShort_ShouldReturnFalse() {
+    public void givenMobileNumber_WhenShort_ShouldReturnFalse() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validMobile("988120393");
         assertFalse(result);
@@ -67,14 +67,14 @@ public class UserRegistrationTest {
 
     //Testing password
     @Test
-    public void givenPassword_WhenProper_ShouldReturnTrue() {
+    public void givenPassword_WhenProper_ShouldReturnTrue() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validPassword("Priyanka@123");
         assertTrue(result);
     }
 
     @Test
-    public void givenPassword_WhenShort_ShouldReturnFalse() {
+    public void givenPassword_WhenShort_ShouldReturnFalse()throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.validPassword("priya12");
         assertFalse(result);

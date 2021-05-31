@@ -2,3 +2,10 @@
 /.idea/
 /build/
 /gradle/
+build.gradle
+settings.gradle
+gradlew
+gradlew.bat
+out
+*.class
+

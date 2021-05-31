@@ -26,7 +26,7 @@ public class ValidEmailTest {
     }
 
     @Test
-    public void givenEmail_ShouldPassTestCases() {
+    public void givenEmail_ShouldPassTestCases() throws UserRegistrationException {
         UserRegistration userRegistration = new UserRegistration();
         boolean result = userRegistration.parameterizedEmail(this.email, this.status);
         assertTrue(result);
